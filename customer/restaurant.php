@@ -78,6 +78,10 @@ $menu_items = mysqli_query(
             background: #f8f9fa;
         }
 
+        .navbar {
+    padding: 14px 30px;
+}
+
         .navbar-brand {
             color: #e74c3c !important;
             font-weight: 800;
@@ -125,16 +129,18 @@ $menu_items = mysqli_query(
 <body>
 
 
-    <nav class="navbar navbar-light bg-white shadow-sm px-4">
-        <a class="navbar-brand"> FoodHub</a>
+    <nav class="navbar shadow-sm px-4" style="background:#2c3e50;">
+        <a class="navbar-brand">
+    <span style="color:white;">Food</span><span style="color:#ff4757;">Hub</span>
+</a>
         <div>
-            <a href="orders.php" class="btn btn-outline-danger me-2">
+            <a href="orders.php" class="btn btn-outline-light me-2">
                 My Orders
             </a>
-            <a href="cart.php" class="btn btn-outline-danger me-2">
+            <a href="cart.php" class="btn btn-outline-light me-2">
                 Cart
             </a>
-            <a href="home.php" class="btn btn-outline-danger me-2">
+            <a href="home.php" class="btn btn-outline-light me-2">
                 Home
             </a>
             <a href="../logout.php" class="btn btn-danger">

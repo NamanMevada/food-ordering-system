@@ -22,8 +22,12 @@ $orders = mysqli_query($conn,
     <title>My Orders - FoodHub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <style>
         body { background: #f8f9fa; }
+        .navbar {
+    padding: 14px 30px;
+}
         .navbar-brand {
             color: #e74c3c !important;
             font-weight: 800;
@@ -49,16 +53,21 @@ $orders = mysqli_query($conn,
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-white shadow-sm px-4">
-        <a class="navbar-brand"> FoodHub</a>
+    <nav class="navbar shadow-sm px-4" style="background:#2c3e50;">
+        <a class="navbar-brand">
+    <span style="color:white;">Food</span><span style="color:#ff4757;">Hub</span>
+</a>
         <div>
-            <a href="home.php" class="btn btn-outline-danger me-2">
+            <a href="home.php" class="btn btn-outline-light me-2">
+                <i class="ri-home-4-line me-1"></i>
                  Home
             </a>
-            <a href="cart.php" class="btn btn-outline-danger me-2">
+            <a href="cart.php" class="btn btn-outline-light me-2">
+                <i class="ri-shopping-cart-2-line me-1"></i>
                  Cart
             </a>
             <a href="../logout.php" class="btn btn-danger">
+                <i class="ri-logout-box-r-line me-1"></i>
                 Logout
             </a>
         </div>
@@ -70,7 +79,7 @@ $orders = mysqli_query($conn,
         <?php if(mysqli_num_rows($orders) == 0): ?>
             <!-- No Orders -->
             <div class="text-center mt-5">
-                <h1>📦</h1>
+                <h1><i class="ri-file-list-3-line me-1"></i></h1>
                 <h4>No orders yet!</h4>
                 <a href="home.php" class="btn btn-danger mt-3">
                     Order Now

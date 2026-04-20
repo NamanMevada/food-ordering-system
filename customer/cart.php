@@ -173,7 +173,9 @@ while ($item = mysqli_fetch_assoc($cart_items)) {
         body {
             background: #f8f9fa;
         }
-
+         .navbar {
+    padding: 14px 30px;
+}
         .navbar-brand {
             color: #e74c3c !important;
             font-weight: 800;
@@ -215,23 +217,29 @@ while ($item = mysqli_fetch_assoc($cart_items)) {
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-white shadow-sm px-4">
-        <a class="navbar-brand">FoodHub</a>
+    <nav class="navbar shadow-sm px-4" style="background:#2c3e50;">
+        <a class="navbar-brand">
+    <span style="color:white;">Food</span><span style="color:#ff4757;">Hub</span>
+</a>
         <div>
-            <a href="home.php" class="btn btn-outline-danger me-2">
+            <a href="home.php" class="btn btn-outline-light me-2">
+                 <i class="ri-home-4-line me-1"></i> 
                 Home
             </a>
-            <a href="orders.php" class="btn btn-outline-danger me-2">
+            <a href="orders.php" class="btn btn-outline-light me-2">
+                 <i class="ri-file-list-3-line me-1"></i>
                 My Orders
             </a>
             <a href="../logout.php" class="btn btn-danger">
+                 <i class="ri-logout-box-r-line me-1"></i>
                 Logout
             </a>
         </div>
     </nav>
 
     <div class="container mt-4">
-        <h4 class="mb-4" style="font-family: 'Poppins', sans-serif;"> My Cart</h4>
+        <h4 class="mb-4" style="font-family: 'Poppins', sans-serif;">
+             My Cart</h4>
 
         <?php if ($error): ?>
             <div class="alert alert-danger"><?= $error ?></div>
