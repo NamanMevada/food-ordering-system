@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Screenshot 8" src="https://github.com/user-attachments/assets/0b41f2f1-a5c1-45df-a1ed-dd65e544fc09" /><img width="1920" height="1080" alt="Screenshot 6" src="https://github.com/user-attachments/assets/2315d8c0-5aa8-4a51-8c2b-514aa1d35b4e" /><img width="1920" height="1080" alt="Screenshot 6" src="https://github.com/user-attachments/assets/00145db7-c608-4168-9f8b-19da7c1fe3d9" />Built a Multi-Vendor Food Ordering System — a complete full stack web application from scratch!
+Built a Multi-Vendor Food Ordering System — a complete full stack web application from scratch!
 
 🛠️ Tech Stack
 PHP · MySQL · Bootstrap 5 · JavaScript · XAMPP
